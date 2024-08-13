@@ -1,0 +1,61 @@
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    
+   
+   
+}
+
+
+
+
+body{
+    font-family: "Source Sans 3", sans-serif;
+
+}
+
+
+
+
+h1,h2{
+
+    font-family: "Playfair Display", serif;
+
+}
+
+.main {
+    background-color: aquamarine;
+}
+#carouselExampleIndicators {
+    max-width: 100%;
+    margin: auto;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    width: 100%; /* Ensure the image spans the full width */
+}
+
+#carouselExample {
+    height: 200px; /* Set height to 200px */
+    overflow: hidden; /* Hide overflow from images */
+}
+
+.greenn{
+    background-color: #A0937D;
+   
+}
+
+
+h5{
+    color: white;
+}
+
+header{
+    background-color: #481E14;
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <title>Furniture</title>
+
+    <style>
+       
+        .search-input {
+            width: 500px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="p-3 text-bg-dark d-flex flex-column">
+        <div class="container ">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-between">
+               
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="./images/logo.png" alt="logo" style="max-height: 40px;">
+                </a>
+
+               
+                <form class=" col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 position-relative" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark search-input"
+                        placeholder="Search..." aria-label="Search">
+                    <a href=""><i
+                            class="fas fa-search position-absolute top-50 end-0 translate-middle-y pe-3 text-secondary"></i></a>
+                </form>
+
+               
+                <div class="text-end">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-3 text-white"><i class="bi bi-shop"></i></a></li>
+                        <li><a href="#" class="nav-link px-3 text-white"><i class="bi bi-person"></i></a></li>
+                        <li><a href="#" class="nav-link px-3 text-white"><i class="bi bi-heart"></i></a></li>
+                        <li><a href="#" class="nav-link px-3 text-white"><i class="bi bi-house"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-end ">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Sofas</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Living</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Bedroom</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Dining</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Kitchen</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Storage</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Study & Office</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Decor</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Lamps & Lighting</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Furnishing</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">Outdoor</a></li>
+                <li><a href="#" class="nav-link px-4 pt-4 text-secondary">WS value</a></li>
+
+
+            </ul>
+        </div>
+
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide container mt-1">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/new-launch.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/new-mattress-banner.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/new-temple-banner.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="row mt-5">
+
+        <h1>Top picks For You</h1>
+        <p class="pt-1 pb-4">Impressive collection For Your Dream Home</p>
+        <div class="col-lg-2">
+            <img src="./images/icon1.jpg" alt="sample" class="ms-4" width="150px">
+
+            <p class="pt-2 ">Sofa sets</p>
+
+        </div>
+        <div class="col-lg-2">
+            <img src="./images/icon2.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">beds</p>
+
+        </div>
+        <div class="col-lg-2">
+            <img src="./images/icon3.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">Dining Table Sets</p>
+
+        </div>
+        <div class="col-lg-2">
+            <img src="./images/icon4.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">Sofa Cum Beds</p>
+
+        </div>
+        <div class="col-lg-2">
+            <img src="./images/icon6.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">Study Tables</p>
+
+        </div>
+        <div class="col-lg-2">
+            <img src="./images/icon7.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">book shelves</p>
+
+        </div>
+    </div>
+
+    <div class="row my-5">
+
+        <div class="col-lg-2">
+            <img src="./images/icon8.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">coffee Tables</p>
+
+        </div>
+        <div class="col-lg-2">
+            <img src="./images/icon9.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">Home Furnishing</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+            <img src="./images/icon10.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">TV Units</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+            <img src="./images/icon11.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">Home Decor</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+            <img src="./images/icon12.jpg" class="ms-4" alt="sample" class="" width="150px">
+            <p class="pt-2">Lamps & Lightings</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+            <img src="./images/icon5.jpg" alt="sample" class="" width="150px">
+            <p class="pt-2">Sale</p>
+
+        </div><!-- /.col-lg-4 -->
+    </div>
+    <hr>
+
+
+
+
+    <h1 class="pt-6">Explore Essential Home Furniture</h1>
+    <p>Design Your Home Decor, Your Way</p>
+    <div class="row mt-5">
+
+
+
+        <div class="col-lg-3 ">
+            <img src="./images/data_balcony-set_arctic-balcony-set_arctic-4-seater-sheesham-wood-balcony-set_walnut-finish_1-750x650.jpg"
+                class="ms-4" alt="sample" class="" width="300px">
+                <h6 class="py-3">Upto 40% Off on <br>4 Seater Wood balcony set</h6>
+                
+
+        </div>
+        <div class="col-lg-3">
+            <img src="./images/data_bed-with-storage_adolph-hydraulic-bed-king-size-honey-finish_honey-finish_1-750x650.jpg"
+                class="ms-4" alt="sample" class="" width="300px">
+                <h6 class="py-3">Upto 50% Off on <br>Bed with Storage</h6> 
+
+
+        </div>
+        <div class="col-lg-3">
+            <img src="./images/data_coffee-tables-mdf_escobar-coffee-table_exotic-teak_updated+new_1-810x702.jpg"
+                class="ms-4" alt="sample" class="" width="300px">
+                <h6 class="py-3">Upto 30% Off on <br>coffee Tables</h6>
+
+        </div>
+        <div class="col-lg-3">
+            <img src="./images/data_dining-set_6-seater_mcbeth-storage-6-seater-dining-table-set_updated_honey_updated_looks_updated_1-810x702.jpg"
+                class="ms-4" alt="sample" class="" width="300px">
+                <h6 class="py-3">Upto 50% Off on <br>6 Seater dining Table</h6>
+
+        </div>
+
+
+    </div>
+
+    <div class="row mt-5 ">
+
+
+
+        <div class="col-lg-3 ">
+            <img src="./images/data_bedside-tables_adolph-bedside-table_revised_honey_updated_1-810x702.jpg"
+                class="ms-4" alt="sample" class="" width="300px">
+                <h6 class="py-3">Upto 60% Off on <br>Bedside Tables</h6>
+
+        </div>
+        <div class="col-lg-3">
+            <img src="./images/data_Potali_multi-hand-woven-wool-and-cotton-4-6-feet-traditional-pattern-dhurries_1-750x650.jpg"
+                class="ms-4" alt="sample" class="" width="300px">
+                <h6 class="py-3">Upto 70% Off on <br> Dhurries</h6>
+        </div>
+        <div class="col-lg-3">
+            <img src="./images/data_china-furniture_carolina-lounge-chair-brown_WSCHAIR-86770_1-750x650.jpg"
+                class="ms-4" alt="sample" class="" width="300px">
+                <h6 class="py-3">Upto 50% Off on <br>Lounge Chair</h6>
+
+        </div>
+        <div class="col-lg-3">
+            <img src="./images/data_China+Lights_Plant_WSARTIFICIAL-76803_Update_1-750x650.jpg" class="ms-4"
+                alt="sample" class="" width="300px">
+            
+                <h6 class="py-3"> Upto 20% Off on <br>Lights Plant</h6>
+
+        </div>
+        <hr>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <h1 class="pt-6">95+ Experience Stores Across India</h1>
+    <p>Get UPTO 10% OFF* on orders placed at your nearest stores</p>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-lg-3 mb-4 position-relative">
+                <img src="./images/1701998659_bengaluru_2x_30111.webp"
+                    class="img-fluid w-100" alt="Balcony Set">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-end   bg-opacity-50 text-white p-6 text-center">
+                    <h5>Bengaluru</h5>
+                    <p>10 Stores</p>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-lg-3 mb-4 position-relative">
+                <img src="./images/1701998730_mumbai_2x_30111.webp"
+                    class="img-fluid w-100" alt="Hydraulic Bed">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-end   text-white p-6 text-center">
+                    <h5 >Mumbai</h5>
+                    <p>8 Stores</p>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-lg-3 mb-4 position-relative">
+                <img src="./images/1701998787_hyderabad_2x_30111.webp"
+                    class="img-fluid w-100" alt="Coffee Table">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-end  text-white p-6 text-center">
+                    <h5>hyderabad</h5>
+                    <p>4 Stores</p>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-lg-3 mb-4 position-relative ">
+                <img src="./images/1701998845_delhi-ncr_2x_30111.webp"
+                    class="img-fluid w-100" alt="Dining Table Set">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-end    text-white p-6 text-center">
+                    <h5>Delhi</h5>
+                    <p>6 Stores</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<!-- Customer Reviews Section -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Customer Reviews</h2>
+    <div class="row">
+        <!-- Review 1 -->
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="./images/customer1.jpg" class="card-img-top" alt="Customer Photo">
+                <div class="card-body">
+                    <h5 class="card-title">Arun</h5>
+                    <p class="card-text">"Excellent quality furniture! The delivery was prompt, and the customer service was outstanding."</p>
+                    <div class="d-flex justify-content-center">
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="./images/customer2.jpg" class="card-img-top" alt="Customer Photo">
+                <div class="card-body">
+                    <h5 class="card-title">Vivek</h5>
+                    <p class="card-text">"Great value for money. The sofa set is comfortable, and the finish is beautiful. Highly recommend!"</p>
+                    <div class="d-flex justify-content-center">
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img src="./images/customer3.jpg" class="card-img-top" alt="Customer Photo">
+                <div class="card-body">
+                    <h5 class="card-title">Jessy</h5>
+                    <p class="card-text">"The dining table set exceeded my expectations. The quality is top-notch, and it looks fantastic in my home."</p>
+                    <div class="d-flex justify-content-center">
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning me-1"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Customer Reviews Section -->
+
+
+
+
+
+
+
+
+
+<div class="greenn text-white mt-5">
+
+    <div class="container ">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3">
+              <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <img src="./images/logo.png" width="180px" alt="">
+              <p class="text-body-secondary ps-4">© Copyright furniture Limited</p>
+            </div>
+        
+            <div class="col mb-3">
+        
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Corporate</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Corporate Governance</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">PFurniture in the News</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Careers</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Partner With Us</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Become a Franchisee</a></li>                
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Become Our Channel Partner</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"> Become Our Pep Homie</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our Marketplace Policies</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Merchant Dashboard Login</a></li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3">
+              <h5>Need Help?</h5>
+              <ul class="nav flex-column text-primary">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Policies</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+        
+              </ul>
+            </div>
+          </footer>
+        </footer>
+      </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
